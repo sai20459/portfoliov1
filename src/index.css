@@ -34,15 +34,15 @@ code {
   overflow: hidden;
 }
 
-header {
-  /* background: #333; */
+/* header {
+  background: #333;
   color: #fff;
   padding-top: 10px;
   min-height: 70px;
   border-bottom: #77aaff 3px solid;
-}
+} */
 
-header a {
+/* header a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -67,7 +67,7 @@ header .logo {
 header nav {
   float: right;
   margin-top: 10px;
-}
+} */
 
 .hero {
   /* background: #77aaff; */

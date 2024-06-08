@@ -3,24 +3,21 @@ import "../index.css";
 
 const About = () => {
   return (
-    <section id="about" className="about">
-      <div className="container">
-        <img src="profile.jpg" alt="Profile Picture" className="profile-pic" />
-        <div className="bio">
-          <h2>About Me</h2>
-          <p>
-            Your bio goes here. Talk about your background, skills, and
-            experience.
-          </p>
-          <h3>Skills</h3>
-          <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            {/* Add more skills as needed */}
-          </ul>
-        </div>
-      </div>
+    <section
+      id="About"
+      className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+    >
+      <p>
+        Experienced Web Developer with a demonstrated history of working in the
+        computer software industry. Skilled in Communication, SAP FI, Cascading
+        Style Sheets (CSS), HTML5, and JavaScript. Strong engineering
+        professional with a Bachelor of Technology - BTech focused in Computer
+        Science from Kalasalingam University. o
+      </p>
+      <p>Your short introduction text here.</p>
+      <a href="#portfolio" className="btn">
+        View My Work
+      </a>
     </section>
   );
 };
