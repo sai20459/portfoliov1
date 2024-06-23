@@ -19,11 +19,11 @@ const Header = () => {
           <ul className="mt-16 w-max">
             {["About", "Experience", "Projects"].map((item, index) => (
               <li key={index}>
-                <a
-                  className="group flex items-center py-3 active"
-                  href={`#${item}`}
-                >
-                  {item}
+                <a className="group flex items-center py-3" href={`#${item}`}>
+                  <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+                  <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                    {item}
+                  </span>
                 </a>
               </li>
             ))}
@@ -31,15 +31,25 @@ const Header = () => {
         </nav>
       </div>
       <ul className="ml-1 mt-8 flex items-center">
-        {["github", "Linkedin"].map((item, index) => (
+        {[
+          {
+            title: "github",
+            href: "https://github.com/sai20459",
+          },
+          {
+            title: "Linkedin",
+            href: "https://www.linkedin.com/in/sai-naveen-janjanam-75046620b/",
+          },
+        ].map((item, index) => (
           <li className="mr-5 text-xs shrink-0" key={index}>
             <a
               className="block hover:text-slate-200"
               target="_blank"
               rel="noreferrer noopener"
               title={item}
+              href={item.href}
             >
-              {item}
+              {item.title}
             </a>
           </li>
         ))}

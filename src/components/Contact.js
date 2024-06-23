@@ -18,11 +18,6 @@ const Contact = () => {
 
           <button type="submit">Send Message</button>
         </form>
-        <div className="social-media">
-          <a href="your-twitter-link">Twitter</a>
-          <a href="your-linkedin-link">LinkedIn</a>
-          {/* Add more social media links as needed */}
-        </div>
       </div>
     </section>
   );
