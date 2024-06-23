@@ -35,10 +35,12 @@ const Header = () => {
           {
             title: "github",
             href: "https://github.com/sai20459",
+            src: "/github-mark.svg",
           },
           {
             title: "Linkedin",
             href: "https://www.linkedin.com/in/sai-naveen-janjanam-75046620b/",
+            src: "/linkedin.svg",
           },
         ].map((item, index) => (
           <li className="mr-5 text-xs shrink-0" key={index}>
@@ -49,7 +51,13 @@ const Header = () => {
               title={item}
               href={item.href}
             >
-              {item.title}
+              <span className="sr-only">{item.title}</span>
+              <img
+                src={item.src}
+                alt={item.title}
+                className="h-6 w-6"
+                aria-hidden="true"
+              />
             </a>
           </li>
         ))}

@@ -3,7 +3,7 @@ import "../index.css";
 
 const Experience = () => {
   return (
-    <section
+    <div
       id="Experience"
       // className="about"
     >
@@ -22,22 +22,32 @@ const Experience = () => {
               </header>
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium leading-snug text-slate-200">
-                  Front
-                  <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"></a>
+                  Web Developer{" "}
+                  <a
+                    className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                    href="https://beyondscale.tech/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    @ BeyondScale
+                  </a>
                 </h3>
-                <p className="mt-2 text-sm leading-normal">
-                  Build and maintain critical components used to construct
-                  Klaviyo’s frontend, across the whole product. Work closely
-                  with cross-functional teams, including developers, designers,
-                  and product managers, to implement and advocate for best
-                  practices in web accessibility.
-                </p>
+                <p className="mt-2 text-sm leading-normal">Build web</p>
                 <ul className="mt-2 flex flex-wrap">
-                  <li className="mr-1.5 mt-2">
-                    <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                      React
-                    </div>
-                  </li>
+                  {[
+                    "React.js",
+                    "Next.js",
+                    "React Native",
+                    "Javascript",
+                    "Tailwindcss",
+                    "Antd",
+                  ].map((item, index) => (
+                    <li className="mr-1.5 mt-2" key={index}>
+                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                        {item}
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -54,7 +64,7 @@ const Experience = () => {
           View full resume
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 
