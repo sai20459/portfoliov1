@@ -13,7 +13,6 @@ const About = () => {
         </h2>
       </div>
       <p>
-        Certainly! Here's the revised bio without the name and within 150 words:
         A skilled full-stack developer with a strong focus on creating scalable,
         user-centric web applications. With a Bachelor of Engineering in
         Computer Science from Kalasalingam University, extensive experience
