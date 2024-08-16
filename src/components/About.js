@@ -13,11 +13,28 @@ const About = () => {
         </h2>
       </div>
       <p>
-        Experienced Web Developer with a demonstrated history of working in the
-        computer software industry. Skilled in Communication, SAP FI, Cascading
-        Style Sheets (CSS), HTML5, and JavaScript. Strong engineering
-        professional with a Bachelor of Technology - BTech focused in Computer
-        Science from Kalasalingam University.
+        Certainly! Here's the revised bio without the name and within 150 words:
+        A skilled full-stack developer with a strong focus on creating scalable,
+        user-centric web applications. With a Bachelor of Engineering in
+        Computer Science from Kalasalingam University, extensive experience
+        spans both front-end and back-end technologies, including ReactJS,
+        Node.js, and ExpressJS.
+        <br /> <br />
+        At Beyondscale Technologies Pvt Ltd, pivotal contributions include
+        developing high-performance web applications, designing RESTful APIs,
+        and enhancing user experiences. Significant projects include government
+        inventory management systems and employee ranking platforms,
+        demonstrating the ability to deliver robust solutions for complex needs.
+        <br />
+        <br />A commitment to continuous learning is evident through
+        participation in hackathons, technical workshops, and achieving SAP
+        Certified Development Associate certification. Published research on
+        distributed computing intelligence further underscores expertise.
+        <br /> <br /> Known for a collaborative approach, mentoring peers, and
+        driving successful project outcomes. Future aspirations include
+        exploring cutting-edge technologies and contributing to innovative
+        projects that drive business growth. A forward-looking mindset ensures
+        readiness for the challenges ahead.
       </p>
     </section>
   );
