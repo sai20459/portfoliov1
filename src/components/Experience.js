@@ -19,14 +19,13 @@ const Experience = () => {
               </header>
               <div className="z-10 sm:col-span-6">
                 <h3 className="font-medium leading-snug text-slate-200">
-                  Web Developer{" "}
                   <a
                     className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                     href="https://beyondscale.tech/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    @ BeyondScale
+                    Web Developer · BeyondScale
                   </a>
                 </h3>
                 <p className="mt-2 text-sm leading-normal">Build web</p>
