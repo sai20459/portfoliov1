@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../index.css";
 
 const Header = () => {
+  const Sections = ["about", "experience", "projects"];
   const [activeSection, setActiveSection] = useState("");
-  console.log(activeSection, "activeSectionactiveSection");
+
   useEffect(() => {
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
@@ -13,21 +14,44 @@ const Header = () => {
       });
     };
 
-    const observer = new IntersectionObserver(handleIntersection);
-
+    const observer = new IntersectionObserver(handleIntersection, {
+      // Adjust this value as needed
+      rootMargin: "-50% 0px -50% 0px", // This will trigger when the section is in the middle of the viewport
+    });
     Sections.forEach((section) => {
       const element = document.getElementById(section);
       if (element) {
         observer.observe(element);
       }
     });
+    const setInitialActiveSection = () => {
+      for (const section of Sections) {
+        const element = document.getElementById(section);
+        if (element && isElementInViewport(element)) {
+          setActiveSection(section);
+          break;
+        }
+      }
+    };
+
+    setInitialActiveSection();
 
     // Cleanup observer on component unmount
     return () => {
       observer.disconnect();
     };
   }, []);
-  const Sections = ["about", "experience", "projects"];
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
@@ -35,7 +59,7 @@ const Header = () => {
           Sai Naveen Janjanam
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Web developer
+          Full stack web developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
           Full-stack developer specializing in scalable web applications and

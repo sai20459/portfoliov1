@@ -35,6 +35,20 @@ const About = () => {
         projects that drive business growth. A forward-looking mindset ensures
         readiness for the challenges ahead.
       </p>
+      {/* <p>
+        A skilled Full-Stack Web Developer with two years of professional
+        experience at Beyondscale Technologies. A graduate in Computer Science
+        Engineering from Kalasalingam University, Sai excels in both front-end
+        and back-end development. His expertise spans ReactJS, NextJS, Node.js,
+        and Express.js, with a focus on creating responsive, user-centric
+        applications. Sai has contributed to diverse projects, including
+        government websites, FingoIndia.com, and Alignometer.com, demonstrating
+        his ability to develop scalable solutions. With proficiency in cloud
+        services, performance optimization, and a SAP certification, Sai
+        combines technical prowess with a commitment to innovation. His
+        background in hackathons, workshops, and extracurricular activities
+        showcases his well-rounded approach to technology and teamwork.
+      </p> */}
     </section>
   );
 };
