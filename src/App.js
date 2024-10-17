@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import { createFirebaseApp } from "./analytics";
 
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -12,6 +13,9 @@ function App() {
     setPosition({ x: event.clientX, y: event.clientY });
   };
 
+  useEffect(() => {
+    createFirebaseApp();
+  }, []);
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => {
