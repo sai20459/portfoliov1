@@ -13,9 +13,9 @@ function App() {
     setPosition({ x: event.clientX, y: event.clientY });
   };
 
-  // useEffect(() => {
-  //   createFirebaseApp();
-  // }, []);
+  useEffect(() => {
+    createFirebaseApp();
+  }, []);
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => {
