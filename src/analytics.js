@@ -1,4 +1,4 @@
-import { initializeApp, getApps } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 export const createFirebaseApp = () => {
@@ -12,17 +12,11 @@ export const createFirebaseApp = () => {
     measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
   };
 
-  //   const app = initializeApp(firebaseConfig);
-  // const analytics = getAnalytics(app);
-  if (getApps().length <= 0) {
-    const app = initializeApp(firebaseConfig);
-    // Check that `window` is in scope for the analytics module!
-    if (typeof window !== "undefined") {
-      // Enable analytics. https://firebase.google.com/docs/analytics/get-started
-      if ("measurementId" in firebaseConfig) {
-        getAnalytics();
-      }
-    }
-    return app;
+  const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+
+  if (typeof window !== "undefined" && firebaseConfig.measurementId) {
+    getAnalytics(app);
   }
+
+  return app;
 };

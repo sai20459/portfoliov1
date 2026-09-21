@@ -54,7 +54,7 @@ const Projects = () => {
                 <h3 className="font-medium leading-snug text-slate-200">
                   <a
                     className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                    href="https://fingoindia.com"
+                    // href="https://fingoindia.com"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -121,7 +121,7 @@ const Projects = () => {
                   {/* Web Developer{" "} */}
                   <a
                     className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                    href="https://prequalification.i4strategies.com/"
+                    href="https://i4strategies.com/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -195,7 +195,7 @@ const Projects = () => {
                   {/* Web Developer{" "} */}
                   <a
                     className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                    // href="https://prequalification.i4strategies.com/"
+                    href="https://tyuts.com/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
